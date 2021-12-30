@@ -1,0 +1,39 @@
+.contenedor{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.animado{
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.transicionDer{
+    animation: desplazamientoDer 1s;
+
+}
+
+@keyframes desplazamientoDer {
+    from{
+        transform: translateX(-200px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+
+.transicionIzq{
+    animation: desplazamientoIzq 1s;
+
+}
+
+@keyframes desplazamientoIzq {
+    from{
+        transform: translateX(0px);
+    }
+    to{
+        transform: translateX(-200px);
+    }
+}
